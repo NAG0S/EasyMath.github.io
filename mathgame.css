@@ -1,0 +1,240 @@
+/* mathgame.css */
+/* 
+Group Members: Jason Bell (2203345)
+               Travaughn Oldacre (2209355)
+               Giovaunni Sewell (2207365)
+               Anthony Allen Jr. (2210148)
+               Kay-Ann Green (2110490)
+
+Title: Math Game (CIT2011 GROUP PROJECT)
+Date: November 18, 2023 
+*/
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #020202;
+    line-height: 1.6;
+    padding: 20px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-image: url("asset/game_background.jpg");
+}
+
+#playArea{
+    font-size: 80px;
+    font-weight: bold;
+    color: #ddd;
+    text-align: center;
+}
+.registration-form,.centerScreen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+input,select,.answerbtn{
+    text-align: center;
+    padding: 3px 55px;
+    box-shadow: 5px 4px 0px rgb(231, 179, 34); 
+    background-color: #ffd06b;
+    border: 5px solid;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;    
+}
+
+.answerbtn, input, select{
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 5px solid;
+}
+
+
+.yourAnswer {
+    width: 50px;
+  }
+h1 {
+    text-align: center;
+    color: #272727;
+}
+
+.heading{
+    color:rgb(255, 243, 221);
+    font-weight: 800px;
+    font-size: 40px;
+
+}
+
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgba(207, 233, 236, 0.884);
+    border: 20px solid rgb(0, 0, 0);
+    box-shadow: 3px 10px 0 rgb(255, 217, 0);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    border-radius: 20px;
+}
+#playerAns{
+    width: 50%;
+    padding: 30px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #04a9f5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: #3178d4;
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.validation-feedback {
+    color: #dc3545;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-size: 0.875em;
+}
+
+
+/* Media queries for small screens */
+@media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    textarea,
+    canvas,
+    select {
+        width: 80%;
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+/* Media queries for large screens */
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 50px;
+    }
+}
+
+
+.displayCharts {
+    text-align: center;
+    max-width: 400px;
+    margin: 30px auto;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(207, 233, 236, 0.884);
+    box-shadow: 3px 10px 0 rgb(255, 217, 0);
+}
+.displayCharts,.Scores_players_area,.playAreaDesign{
+    text-align: center;
+    max-width: 400px;
+    margin: 30px auto;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgba(207, 233, 236, 0.884);
+    border: 20px solid rgb(47, 255, 57);
+    box-shadow: 3px 10px 0 rgb(255, 0, 0);
+}
+.playAreaDesign{
+    color: white;
+    background-color: rgba(78, 78, 78, 0.719);
+    border: 20px solid rgb(172, 201, 7);
+    box-shadow: 3px 10px 0 rgb(135, 147, 255);
+}
+.Scores_players_area{
+    align-items: center;
+    color: white;
+    background-color: rgba(22, 149, 163, 0.884);
+    border: 20px solid rgb(201, 7, 143);
+    box-shadow: 3px 10px 0 rgb(0, 26, 255);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    transition: width 0.5s;
+    background-color: black;
+}
+
+#maleProgressBar {
+    background-color: #7ccdff;
+}
+
+#femaleProgressBar {
+    background-color: rgb(214, 53, 179);
+}
+#scoreRange0 {
+    background-color: #ff0000;
+}
+
+#scoreRange1 {
+    background-color: #db991f;
+}
+
+#scoreRange2 {
+    background-color: #baad3c;
+}
+
+#scoreRange3 {
+    background-color: rgb(145, 236, 0);
+}
+
+#scoreRange4 {
+    background-color: #57dd09;
+}
+
+#scoreRange5 {
+    background-color: rgb(50, 138, 0);
+}
+
+#scoreRange6 {
+    background-color: #004e03;
+}
+
